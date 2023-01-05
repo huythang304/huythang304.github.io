@@ -11,6 +11,9 @@
     font-weight:400;font-display:swap;
     src:local('Roboto Condensed'),local('RobotoCondensed-Regular'),url('../font/robotocondensed/roboto-condensed-v16-vietnamese_cyrillic-regular.eot?#iefix') format('embedded-opentype'),url('../font/robotocondensed/roboto-condensed-v16-vietnamese_cyrillic-regular.woff2') format('woff2'),url('../font/robotocondensed/roboto-condensed-v16-vietnamese_cyrillic-regular.woff') format('woff'),url('../font/robotocondensed/roboto-condensed-v16-vietnamese_cyrillic-regular.ttf') format('truetype')
 }
+.mb-0{
+    margin-bottom: 0 !important;
+}
 .header-logo{
     display:block;
     width:150px;
@@ -330,6 +333,9 @@ h1 {
     -o-transition: all .3s ease-in-out;
     -ms-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+}
+.slider-premiumItem-img .slider-item.slider-text {
+    width: auto;
 }
 .slider-premiumItem-img .slider-item-best {
     width: 150px;
@@ -1527,11 +1533,11 @@ ul.list-ranking {
     font-size: 12px;
 }
 
-#slider-premiumItem-img2 .premiumItem .img {
+#slider-premiumItem-img2 .premiumItem .img,#slider-premiumItem-img3 .premiumItem .img {
     position: relative;
     margin-bottom: 10px;
 }
-#slider-premiumItem-img2 .title {
+#slider-premiumItem-img2 .title,#slider-premiumItem-img3 .title {
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -1566,16 +1572,16 @@ ul.list-ranking {
 }
 
 @media (min-width: 992px) {
-    #slider-premiumItem-img2 .img img {
+    #slider-premiumItem-img2 .img img,#slider-premiumItem-img3 .img img {
         width: 140px;
     }
 
-    #slider-premiumItem-img2 .slick-slide img {
+    #slider-premiumItem-img2 .slick-slide img,#slider-premiumItem-img3 .slick-slide img {
         text-align: center;
         margin: auto;
     }
 
-    #slider-premiumItem-img2 .premiumItem .img {
+    #slider-premiumItem-img2 .premiumItem .img, #slider-premiumItem-img3 .premiumItem .img {
         margin: 0 auto;
         margin-bottom: 10px;
         display: block;
@@ -1584,7 +1590,7 @@ ul.list-ranking {
         max-width: 100%;
     }
 
-    #slider-premiumItem-img2 .title {
+    #slider-premiumItem-img2 .title,#slider-premiumItem-img3 .title {
         -webkit-line-clamp: 1;
         font-size: 14px;
     }
@@ -1685,4 +1691,6 @@ ul.list-ranking {
     .item-user:last-child {
         margin-bottom: 0px;
     }
+}.font-16{
+    font-size: 16px;
 }

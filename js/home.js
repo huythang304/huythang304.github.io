@@ -340,6 +340,7 @@ jQuery(document).ready(function(){
 				centerPadding: '40px',
 				slidesToShow: 1,
                 dots: true,
+                arrows: false, // button next pre
                 variableWidth: false, // Các slide chiều rộng thay đổi không cần thuộc tính slidesToShow
 			}
             // settings: {
@@ -365,4 +366,78 @@ jQuery(document).ready(function(){
         ]            
     });
     
+    $('#slider-premiumItem-img3').slick({
+        slidesToScroll: 3,
+        infinite: true, // vòng lặp vô hạn
+        arrows: true, // button next pre
+        mobileFirst: true,
+        centerMode: true, 
+        focusOnSelect: true, //Cho phép tập trung vào yếu tố được chọn (nhấp)
+        variableWidth: true, // Các slide chiều rộng thay đổi không cần thuộc tính slidesToShow
+        autoplay: true, 
+        swipeToSlide: true, //Cho phép người dùng kéo hoặc vuốt trực tiếp vào một slide bất kể slide là gì            
+        autoplaySpeed: 4000,
+        dots: false,
+        infinite: true, // vòng lặp vô hạn
+        asNavFor: '#slider-premiumItem-img4',
+
+        prevArrow: '<span class="slick-prev slick-arrow"><span class="fa fa-angle-left"></span></span>',
+        nextArrow: '<span class="slick-next slick-arrow"><span class="fa fa-angle-right"></span></span>',
+        responsive: [
+        {
+            breakpoint: 991,
+            settings: {
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 3,
+                arrows: false, // button next pre
+                variableWidth: false, // Các slide chiều rộng thay đổi không cần thuộc tính slidesToShow
+            }
+        },            
+        {
+            breakpoint: 480,
+            settings: {
+                arrows: true,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1,
+            }
+        }
+        ]            
+    });
+    $('#slider-premiumItem-img4').slick({
+        slidesToScroll: 3,
+        infinite: true, // vòng lặp vô hạn
+        arrows: true, // button next pre
+        mobileFirst: true,
+        centerMode: true, 
+        focusOnSelect: true, //Cho phép tập trung vào yếu tố được chọn (nhấp)
+        variableWidth: true, // Các slide chiều rộng thay đổi không cần thuộc tính slidesToShow
+        autoplay: true, 
+        swipeToSlide: true, //Cho phép người dùng kéo hoặc vuốt trực tiếp vào một slide bất kể slide là gì            
+        autoplaySpeed: 4000,
+        dots: true,
+        arrows: false,
+                slidesToShow: 1,
+        infinite: true, // vòng lặp vô hạn
+        asNavFor: '#slider-premiumItem-img3',
+        responsive: [
+        {
+            breakpoint: 991,
+            settings: {
+                centerMode: true,
+                centerPadding: '10px',
+                arrows: false, // button next pre
+                variableWidth: false, // Các slide chiều rộng thay đổi không cần thuộc tính slidesToShow
+            }
+        },            
+        {
+            breakpoint: 480,
+            settings: {
+                centerMode: true,
+                centerPadding: '10px',
+            }
+        }
+        ]            
+    });
 });	
