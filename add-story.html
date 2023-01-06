@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Trang Chủ</title>
+	<link href="./font/oswaldvncy/oswald-v16-vietnamese_cyrillic-regular.woff2">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="./css/custom.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<link rel="stylesheet" type="text/css" href="./css/user.css">
+</head>
+
+<body>
+	<!-- Menu -->
+	<div class="container">
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+						data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<h1>
+						<a href="./index.html" title="Đọc Truyện">
+							<img class="header-logo" src="./images/logo.png">
+						</a>
+					</h1>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+
+						<!-- Dropdown Truyện Ngắn -->
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+								aria-haspopup="true" aria-expanded="false">Danh Sách <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="."><span class="fa fa-search"></span> Tìm Kiếm Nâng Cao</a></li>
+								<li><a href="."><i class="fa fa-free-code-camp" aria-hidden="true"></i> Bảng Xếp
+										Hạng</a></li>
+								<li><a href="."><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Truyện Sáng
+										Tác</a></li>
+								<li><a href="."><i class="fa fa-language" aria-hidden="true"></i> Truyện Dịch/Edit</a>
+								</li>
+								<li role="separator" class="divider"></li>
+								<li class="dropdown-header"><span class="fa fa-outdent"></span> Chuyên Mục Khác</li>
+								<li><a href="."><i class="fa fa-bullhorn" aria-hidden="true"></i> Thông Báo</a></li>
+								<li><a href="."><span class="fa fa-blind"></span> Hướng Dẫn</a></li>
+							</ul>
+						</li>
+
+						<!-- Dropdown Kho Truyện-->
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+								aria-haspopup="true" aria-expanded="false">Thể Loại<span class="caret"></span></a>
+							<ul class="multi-column dropdown-menu row" role="menu">
+								<li class="col-xs-6 col-sm-4 col-md-4">
+									<a href=".">
+										<i class="fa fa-angle-double-right" aria-hidden="true"></i> Thể Loại
+										<i class="fa fa-venus-double c-d-d" aria-hidden="true"></i>
+									</a>
+								</li>
+								<li class="col-xs-6 col-sm-4 col-md-4">
+									<a href=".">
+										<i class="fa fa-angle-double-right" aria-hidden="true"></i> Thể Loại
+										<i class="fa fa-venus-double c-d-d" aria-hidden="true"></i>
+									</a>
+								</li>
+								<li class="col-xs-6 col-sm-4 col-md-4">
+									<a href=".">
+										<i class="fa fa-angle-double-right" aria-hidden="true"></i> Thể Loại
+										<i class="fa fa-venus-double c-d-d" aria-hidden="true"></i>
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul><!-- nav navbar-nav -->
+					<ul class="nav navbar-nav navbar-right">
+						<!-- Code search bootstrap Navigation MyTruyen.Com -->
+						<form action="." method="get" class="navbar-form navbar-left" role="search">
+							<div class="form-group">
+								<input class="form-control" name="title" type="text" value=""
+									placeholder="Nhập Tên Truyện..." style="max-width:140px;" aria-label=""
+									role="search">
+								<input class="btn btn-primary" type="submit" value="Tìm kiếm" role="search">
+							</div>
+						</form>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+								aria-haspopup="true" aria-expanded="false">
+								<span id="user_display_name">Mơ Đời Không Như</span> <span class="fa fa-user"></span>
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" id="d_u">
+								<li id="d_u_login">
+									<a href="."><i class="fa fa-user"></i> Profile</a>
+								</li>
+								<li>
+									<a href="."><i class="fa fa-upload"></i> Đăng Truyện</a>
+								</li>
+								<li>
+									<a href=".">
+										<i class="fa fa-list-alt"></i> Quản Lý Truyện
+									</a>
+								</li>
+								<li>
+									<a href=".">
+										<i class="fa fa-envelope"></i> Tin Nhắn
+									</a>
+								</li>
+								<li>
+									<a href=".">
+										<i class="fa fa-money"></i> Nạp Vàng
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div><!-- collapse navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav><!-- navbar navbar-inverse -->
+	</div>
+	<!-- Menu -->
+	<div class="clearfix"></div>
+
+	<div class="container">
+		<div id="ads-header" class="text-center" style="margin-bottom: 10px"></div>
+	</div>
+
+	<div class="container tax">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item">
+				<span class="fa fa-home"></span> <a href="/" itemprop="url">Home</a>
+			</li>
+			<li class="breadcrumb-item active">
+				Profile
+			</li>
+		</ol>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-xs-12">
+				<div id="ss-user">
+					<div class="user_avatar_parent">
+						<div class="user_avatar_2">
+							<img src="./images/1667815741-1667841084.jpg">
+						</div>
+					</div>
+					<div class="ss-info zbottom-10">
+						<div class="user_nickname">
+							<a href=".">User</a>
+						</div>
+					</div>
+				</div>
+				<div id="user-sidebar">
+					<ul class="list-group">
+						<li class="list-group-item tf-active">
+							<a href="."><i class="fa fa-tachometer" aria-hidden="true"></i> Profile</a>
+						</li>
+						<li class="list-group-item ">
+							<a href="."><i class="fa fa-cloud-upload" aria-hidden="true"></i> Đăng Truyện</a>
+						</li>
+						<li class="list-group-item ">
+							<a href="."><i class="fa fa-list-alt" aria-hidden="true"></i> Quản Lý Truyện</a>
+							<div class="pull-right">
+								<span class="badge">2</span>
+							</div>
+						</li>
+						<li class="list-group-item ">
+							<a href="."><i class="fa fa-money" aria-hidden="true"></i> Nạp Tiền</a>
+						</li>
+						<li class="list-group-item ">
+							<a href="."><i class="fa fa-money" aria-hidden="true"></i> Rút Tiền</a>
+						</li>
+						<li class="list-group-item ">
+							<a href="."><i class="fa fa-users" aria-hidden="true"></i> Thành Viên</a>
+						</li>
+						<li class="list-group-item ">
+							<a href="."><i class="fa fa-cog" aria-hidden="true"></i> Cài Đặt Cá Nhân</a>
+						</li>
+						<li class="list-group-item">
+							<a href="."><i class="fa fa-sign-out" aria-hidden="true"></i> Đăng Xuất</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-9 col-xs-12">
+				<h1 id="h1">Đăng Truyện</h1>
+
+				<div class="alert alert-info" role="alert">
+
+					<i class="fa fa-hand-o-right" aria-hidden="true"></i> Hãy đọc <a class="link-color"
+						href="/guide/tos-publish/"> Điều Khoản Đăng Truyện</a> &amp; <a class="link-color"
+						href="/guide/publish/"> Hướng Dẫn Đăng Truyện</a> để truyện của bạn được duyệt (công khai)
+
+				</div>
+
+				<div class="form-group row">
+
+					<label for="ten_truyen" class="col-sm-2 col-form-label"><i class="fa fa-book"
+							aria-hidden="true"></i> Tên Truyện</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="ten_truyen"
+							placeholder="Viết Hoa Ký Tự Đầu Tiên Mỗi Từ">
+						<div id="show_ten_truyen"></div>
+					</div>
+
+
+				</div>
+
+
+				<div class="form-group row">
+					<label class="col-sm-2 col-form-label"><i class="fa fa-file-text-o" aria-hidden="true"></i> Giới
+						Thiệu</label>
+					<div class="col-sm-10">
+						<div id="richeditor-show"></div>
+						<div id="richeditor" contenteditable="true" data-placeholder="Giới thiệu / Văn án"></div>
+					</div>
+				</div>
+
+
+				<div class="form-group row">
+					<label for="tu_khoa" class="col-sm-2 col-form-label"><i class="fa fa-tags" aria-hidden="true"></i>
+						Thể Loại</label>
+					<div class="col-sm-10">
+
+						<div class="input-group">
+							<input type="text" class="form-control" id="tu_khoa"
+								placeholder="Mỗi từ khóa cách nhau bằng dấu phẩy">
+							<span id="pending_filer_tag_keyword"></span>
+
+							<span class="input-group-addon" id="add_keyword">Thêm</span>
+						</div>
+
+						<div id="search_keyword"></div>
+
+						<div id="show_keyword">
+
+						</div>
+
+					</div>
+
+					<div class="col-sm-2">
+					</div>
+					<div class="col-sm-10 ztop-10" style="font-size: 90%">
+						<a href="/guide/tags/" target="_blank" class="link-guide"><i class="fa fa-blind"
+								aria-hidden="true"></i> Các thể loại truyện thường gặp</a>
+					</div>
+
+
+				</div>
+
+
+				<div class="row">
+					<div class="tf_css_flex">
+						<div class="col-xs-4 col-sm-2">
+							<strong><i class="fa fa-check" aria-hidden="true"></i> Loại Truyện</strong>
+						</div>
+
+						<div class="col-xs-8 col-sm-10">
+							<div class="form-group">
+								<select class="form-control" id="type_truyen">
+									<option value="">Sưu Tầm</option>
+									<option value="1">Sáng Tác</option>
+									<option value="2">Tự Dịch/ Edit</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-xs-12 col-sm-2">
+					</div>
+					<div class="col-xs-12 col-sm-10">
+						<div id="show_type_truyen">
+							<div class="invalid-feedback">
+							</div>
+							<div class="valid-feedback">
+							</div>
+
+						</div>
+					</div>
+
+
+				</div>
+
+				<div id="show_tac_gia">
+					<div class="form-group row">
+						<label for="tac_gia" class="col-sm-2 col-form-label"><i class="fa fa-user"
+								aria-hidden="true"></i> Tác Giả</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="tac_gia"
+								placeholder="Mỗi từ khóa cách nhau bằng dấu phẩy">
+						</div>
+					</div>
+				</div>
+
+
+
+				<hr>
+				<div class="text-center">
+					<span id="dang_truyen" style="display: inline-block;">
+						<span class="btn btn-primary color-white"><i class="fa fa-cloud-upload" aria-hidden="true"></i>
+							Đăng Truyện</span>
+					</span>
+					<div id="show_dang_truyen"></div>
+				</div>
+
+
+
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./js/slick.min.js"></script>
+	<script type="text/javascript" src="./js/home.js"></script>
+</body>
+
+</html>
